@@ -1,0 +1,37 @@
+@use "@/styles/var" as *;
+
+:target::before {
+    content: "";
+    display: block;
+    // height: 80px;
+}
+
+.ContentNavComponent {
+    .nav_item ::before {
+        @apply content-[''] -left-2.5 absolute top-1/2 -translate-y-1/2 w-1 h-[15px] rounded-[20px] bg-primary transition-transform;
+    }
+
+    .h2 {
+        padding-left: 35px;
+
+        &.active {
+            padding-left: 45px;
+
+            &::before {
+                left: 30px;
+            }
+        }
+    }
+
+    .h3 {
+        padding-left: 55px;
+
+        &.active {
+            padding-left: 65px;
+
+            &::before {
+                left: 50px;
+            }
+        }
+    }
+}
