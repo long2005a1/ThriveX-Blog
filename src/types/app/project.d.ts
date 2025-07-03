@@ -48,4 +48,14 @@ export interface Theme {
 // 其他配置
 export interface Other {
     email: string
+    }
+
+
+export type EnvConfigName = 'baidu_statis' | 'email' | 'gaode_map' | 'gaode_coordinate'
+
+export interface EnvConfig {
+    id: string,
+    name: string,
+    value: any,
+    notes: string
 }
