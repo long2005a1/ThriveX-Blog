@@ -1,9 +1,9 @@
 import Link from 'next/link';
 import Image from 'next/image';
-import { getConfigDataAPI } from '@/api/project';
+import { getWebConfigDataAPI } from '@/api/config';
 import { getUserDataAPI } from '@/api/user';
 import { User } from '@/types/app/user';
-import { Web } from '@/types/app/project';
+import { Web } from '@/types/app/config';
 import Tooltip from './components/Tooltip';
 
 import animals from './images/animals.webp';
@@ -12,7 +12,7 @@ import GH from './images/GH.png';
 
 export default async () => {
   const { data: user } = (await getUserDataAPI()) || { data: {} as User }
-  const { data: web } = (await getConfigDataAPI<Web>("web")) || { data: {} as Web }
+  const { data: web } = (await getWebConfigDataAPI<Web>("web")) || { data: {} as Web }
 
   return (
     <>
