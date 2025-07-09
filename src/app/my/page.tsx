@@ -6,8 +6,6 @@ import Character from './component/Character'
 import Map from './component/Map'
 import Technology from './component/Technology'
 import Project from './component/Project'
-import CurriculumVitae from './component/CurriculumVitae'
-import Info from "./component/Info";
 import Calendar from "./component/Calendar"
 import InfoTwo from './component/InfoTwo'
 
@@ -16,10 +14,10 @@ export default () => {
     info: {
       name: "Long Youyong",
       avatar: 'https://q.qlogo.cn/g?b=qq&nk=2190008995&s=640',
-      profession: "一名学生，现读大一",
+      profession: "一名学生，现读大二",
       introduction: "我的梦想是成为一个拥有网站高额访问量的网站，本网站搭建的是“刘宇阳”的ThriveX博客，我将通过博客分享我的乐趣！",
     },
-    infoTwo: {
+    info_two: {
       author: '龙氏',
       avatar_url: 'https://q.qlogo.cn/g?b=qq&nk=2190008995&s=640',
       left_tags: [
@@ -167,7 +165,7 @@ export default () => {
   }
 
   return (
-    <>
+    <>  
       <title>👋 关于我</title>
       <meta name="description" content="👋 关于我" />
 
@@ -175,7 +173,7 @@ export default () => {
         style={{ backgroundImage: `url(${bg.src})` }}>
         <div className="w-[90%] lg:w-[950px] mx-auto">
           {/* <Info data={data?.info} /> */}
-          <InfoTwo data={data?.infoTwo} />
+          <InfoTwo data={data?.info_two} />
         </div>
 
         <div className='flex justify-center mt-24 px-10'>
