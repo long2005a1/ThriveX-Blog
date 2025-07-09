@@ -92,9 +92,6 @@ const ContentMD = ({ data }: Props) => {
     const [expanded, setExpanded] = useState(false);
     const isLong = value.split("\n").length > 10;
 
-    // 新增：将代码按行分割
-    const codeLines = useMemo(() => value.split("\n"), [value]);
-
     const highlightedLines = useMemo(() => {
       try {
         if (hljs.getLanguage(language)) {
