@@ -1,6 +1,6 @@
 {
   "name": "thrive-blog",
-  "version": "2.0.0",
+  "version": "3.0",
   "private": true,
   "scripts": {
     "dev": "next dev --turbopack",
@@ -12,6 +12,10 @@
     "name": "龙氏",
     "email": "longbt@er.long2024.cn",
     "url": "https://long2025.top"
+  },
+  "engines": {
+    "node": ">=20",
+    "npm": ">=10"
   },
   "dependencies": {
     "@amap/amap-jsapi-loader": "^1.0.1",
