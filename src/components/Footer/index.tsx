@@ -12,7 +12,7 @@ import GH from './images/GH.png';
 
 export default async () => {
   const { data: user } = (await getUserDataAPI()) || { data: {} as User }
-  const { data: web } = (await getWebConfigDataAPI<Web>("web")) || { data: {} as Web }
+  const { data: { value: web } } = (await getWebConfigDataAPI<{ value: Web }>("web")) || { data: { value: {} as Web } };
 
   return (
     <>

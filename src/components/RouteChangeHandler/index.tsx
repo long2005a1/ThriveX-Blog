@@ -16,7 +16,7 @@ const RouteChangeHandler: React.FC = () => {
         );
         console.log("🚀 欢迎使用 ThriveX 现代化博客管理系统")
         console.log("🎉 开源地址：https://github.com/LiuYuYang01/ThriveX-Blog")
-        console.log("🏕 作者主页：https://liuyuyang.net")
+        console.log("🏕  博客主页：https://long2025.top")
         console.log("🌟 觉得好用的话记得点个 Star 哦 🙏")
 
         window.scrollTo(0, 0);

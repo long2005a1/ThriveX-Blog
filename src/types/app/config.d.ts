@@ -37,7 +37,7 @@ export interface Theme {
     light_logo: string,
     dark_logo: string,
     swiper_image: string,
-    swiper_text: string,
+    swiper_text: Social[],
     reco_article: string,
     social: string,
     covers: string,
