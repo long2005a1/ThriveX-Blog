@@ -38,8 +38,8 @@ export interface Theme {
     dark_logo: string,
     swiper_image: string,
     swiper_text: string[],
-    reco_article: string[],
-    social: string,
+    reco_article: number[],
+    social: Social[],
     covers: string,
     record_name: string,
     record_info: string
