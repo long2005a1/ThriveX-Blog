@@ -15,7 +15,7 @@ interface Props {
 export default async (props: Props) => {
   const searchParams = await props.searchParams;
   const page = searchParams.page || 1;
-  const { data: { value: data } } = (await getWebConfigDataAPI<{ value: Theme }>("layout")) || { data: { value: {} as Theme } };
+  const { data: { value: data } } = (await getWebConfigDataAPI<{ value: Theme }>("theme")) || { data: { value: {} as Theme } };
 
   return (
     <>
