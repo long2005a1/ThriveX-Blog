@@ -1,21 +1,23 @@
-import Slide from "@/components/Slide";
-import Typed from "@/components/Typed";
-import Starry from "@/components/Starry"
-import Container from "@/components/Container";
-import ArticleLayout from "@/components/ArticleLayout";
-import Sidebar from "@/components/Sidebar";
+import Slide from '@/components/Slide';
+import Typed from '@/components/Typed';
+import Starry from '@/components/Starry';
+import Container from '@/components/Container';
+import ArticleLayout from '@/components/ArticleLayout';
+import Sidebar from '@/components/Sidebar';
 
-import { getWebConfigDataAPI } from '@/api/config'
-import { Theme } from "@/types/app/config";
+import { getWebConfigDataAPI } from '@/api/config';
+import { Theme } from '@/types/app/config';
 
 interface Props {
   searchParams: Promise<{ page: number }>;
-};
+}
 
 export default async (props: Props) => {
   const searchParams = await props.searchParams;
   const page = searchParams.page || 1;
-  const { data: { value: data } } = (await getWebConfigDataAPI<{ value: Theme }>("theme")) || { data: { value: {} as Theme } };
+  const {
+    data: { value: data },
+  } = (await getWebConfigDataAPI<{ value: Theme }>('theme')) || { data: { value: {} as Theme } };
 
   return (
     <>

@@ -7,11 +7,7 @@ const nextConfig = {
         remotePatterns: [
             {
                 protocol: 'https',
-                hostname: 'liuyuyang.net',
-            },
-            {
-                protocol: 'https',
-                hostname: 'res.liuyuyang.net',
+                hostname: 'long2025.top',
             },
             {
                 protocol: 'https',
@@ -20,6 +16,10 @@ const nextConfig = {
             {
                 protocol: 'https',
                 hostname: 'bu.dusays.com',
+            },
+            {
+                protocol: 'https',
+                hostname: 'tu.long2024.cn',
             },
             {
                 protocol: 'https',
